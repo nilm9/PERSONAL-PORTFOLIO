@@ -1,7 +1,5 @@
 
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Auth from './layout/Auth'
-import Login from './layout/Login'
+
 import Header from './components/header/Header'
 import Contact from './components/contact/Contact'
 import About from './components/about/About'
