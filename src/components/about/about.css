@@ -1,0 +1,89 @@
+.about__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+.about__content h2,.about__content h5{
+    text-align: left;
+}
+
+.about__content .btn{
+
+    margin: 1rem 0;
+}
+
+.about__me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem 2rem 0 0 ;
+    background: linear-gradient( var(--blue4), transparent);
+    display: grid;
+    place-items: center;
+    margin: 0rem 2rem;
+}
+
+.about__me-image {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+
+
+}
+
+.about__card{
+    background-color: red;
+    margin: 2rem;
+}
+
+.about-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+/* MQ */
+/* medium devices */
+@media screen and (max-width: 1024px) {
+        .about__container{
+            grid-template-columns: 1fr;
+            
+        }
+        .about__me{
+            width: 50%;
+            margin: 2rem auto 4rem;
+        }
+
+        .about__content p{
+            margin: 1rem 0 1.5rem;
+        }
+}
+/* small devices */
+
+@media screen and (max-width: 600px) {
+
+    .about__container{
+        grid-template-columns: 1fr;
+        
+    }
+    .about__content h2,.about__content h5{
+        text-align: center;
+    }
+    .about__me{
+        width: 90%;
+        margin: 0rem auto ;
+    }
+
+    .about__content {
+        text-align: center;
+    }
+    .about__content p {
+        margin: 1rem ;
+    }
+    .about-social{
+        display: unset;
+        margin-top: 6rem;
+    }
+}
+

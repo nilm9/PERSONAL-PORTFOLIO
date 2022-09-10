@@ -1,0 +1,39 @@
+/* HEADER */
+
+header{
+    height: 80vh;
+    background-image: linear-gradient(to bottom,var(--blue4-bg),var(--blue1-bg) ),
+    url('../../assets/background.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+      
+  }
+  .header__container{
+      padding: 5rem 2rem 5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .cta{
+      display: flex;
+      gap: 1.2rem;
+      justify-content: center;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .cta{
+        display: flex;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

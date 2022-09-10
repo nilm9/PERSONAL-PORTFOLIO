@@ -1,0 +1,145 @@
+.services-sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom,var(--blue1-bg),var(--blue4-bg) ),
+    url("../../assets/form2.png"); ;
+    background-size: cover;
+    background-position: center center;
+}
+
+.title-serv h2, .title-serv h5{
+    text-align: left;
+}
+
+.title-serv h2{
+    font-weight: 500;
+    margin: 1rem 0;}
+
+.title-serv h5{
+    color: var(--blue4);
+
+}
+.ct1, .ct2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ct1{
+    padding: 1rem;
+}
+.ct2 {
+    aspect-ratio: 1/1;
+    width: 60%;
+    padding: 1rem;
+
+}
+
+
+.container__serv h2{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+
+}
+
+.container__serv span{
+    color: var(--blue4);
+}
+
+
+.container__serv{
+    background-color: var(--card-bg);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.container__serv button{
+margin: 3rem 0 1rem 0;
+}
+
+.language-container:hover{
+
+    transition: var(--transition);
+    backdrop-filter: blur(50px);
+    cursor: default;
+
+}
+
+
+
+
+
+
+/* MQ */
+/* medium devices */
+@media screen and (max-width: 1024px) {
+
+    .containers{
+
+        width: 80%;
+    
+    }
+    .container__serv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ct2 {
+        display: none;
+    
+    }
+
+
+
+
+
+
+}
+/* small devices */
+
+@media screen and (max-width: 600px) {
+    .services-sect h2, .services-sect h5, .services-sect p{
+        text-align: center;
+
+    }
+    .containers{
+        width: 90%;
+    }
+
+    .language-container{
+        padding: 2rem;
+        margin: .5rem 0;
+
+    }
+
+    .text-exp{
+        width: 80%;
+    }
+
+    .name-language h3{
+        font-size: 1rem;
+    }
+
+    .ct2 {
+        display: none;
+    
+    }
+
+    .ct1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
