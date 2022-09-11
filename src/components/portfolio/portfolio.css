@@ -26,6 +26,10 @@
     position: relative;
 }
 
+.hidden{
+    display: none;
+}
+
 .portfolio__item img{
     border-radius: 1rem ;
     width: 100%;

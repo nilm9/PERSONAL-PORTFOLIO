@@ -1,7 +1,16 @@
 import React from 'react'
 import './experience.css'
+import { useEffect } from 'react'
+import Aos from "aos"
+import "aos/dist/aos.css"
+
+
 
 const Experience = () => {
+    useEffect(()=>{
+        Aos.init({duration: 2000})  
+    
+      },[])
   return (
     <section className='exp-sect' id='experience'>
         <div className="container align-mobile-exp">
@@ -10,8 +19,8 @@ const Experience = () => {
         <h2>My experience</h2>
 
         <div className="containers-exp  mt-4">
-            <div className="flex flex-col gap-2  lg:flex-row lg:gap-10 ">
-            <div className="language-container ">
+            <div className="flex flex-col gap-2  lg:flex-row lg:gap-10 lg:place-content-between ">
+            <div className="language-container" data-aos="fade">
                 <h2> <span className='span-exp'>FRONT-END</span>  skills</h2>
                 <div className="language-p">
                         <div className="name-language">
@@ -58,7 +67,7 @@ const Experience = () => {
 
 
                 </div>
-                <div className="language-container">
+                <div className="language-container animate-down" data-aos="fade">
                     <h2> <span className='span-exp'>BACK-END</span>  skills</h2>
                     <div className="language-p">
                         <div className="name-language">
@@ -94,7 +103,7 @@ const Experience = () => {
 
 
                 </div>
-                <div className="language-container">
+                <div className="language-container animate-up" data-aos="fade">
                         <h2><span className='span-exp'>Language </span> skills</h2>
                         <div className="language-p">
                                 <div className="name-language">

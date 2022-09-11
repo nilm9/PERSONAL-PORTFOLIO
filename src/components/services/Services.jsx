@@ -1,9 +1,17 @@
 import React from 'react'
 import './services.css'
 import RING from "../../assets/ring.png"
-
 import RING2 from "../../assets/ring2.png"
+import { useEffect } from 'react'
+import Aos from "aos"
+import "aos/dist/aos.css"
+
+
 const Services = () => {
+  useEffect(()=>{
+    Aos.init({duration: 2000})  
+
+  },[])
   return (  <section className='services-sect' id='services'>
   <div className="container ">
 
@@ -14,7 +22,7 @@ const Services = () => {
 
 
     
-    <div className="containers__serv  ">
+    <div className="containers__serv" data-aos="fade-up"> 
             <div className="container__serv ">
                 <div className="ct1">
                     <h2><span className='span-exp'>WEB  </span> DEVELOPMENT</h2>
@@ -26,7 +34,7 @@ const Services = () => {
                 </div>
 
             </div> 
-            <div className="container__serv">
+            <div className="container__serv " data-aos="fade-up">
                 <div className="ct1">
                    <h2><span className='span-exp'>APP </span> DEVELOPMENT</h2>
                     <p>I could build a custom application for your business. It's a nice solution for managing customers and bills. Usually I use MERN for building the frond and backend.</p>
