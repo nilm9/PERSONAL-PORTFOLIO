@@ -8,7 +8,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Nav from './components/nav/Nav'
 import Experience from './components/experience/Experience'
 import Services from './components/services/Services'
-
+import {BrouserRouter, Routes, Route} from 'react-router-dom '
 
 
 function App() {

@@ -22,6 +22,7 @@ const Contact = () => {
           <h2>Contact Me</h2>
           <input type="text" name='name' placeholder='Your Name'  required />
           <input type="email" name="email" placeholder='Your Email'  required/>
+          <input type="hidden" name="_next" value="https://kaleidoscopic-pegasus-955f2c.netlify.app/thanks.html"/>
           <textarea name="message" id="" cols="30" rows="10" placeholder='Your Message' required></textarea>
           <button type='submit' className='btn'>Send</button>
         </form>
